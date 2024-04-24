@@ -1,0 +1,17 @@
+version: "3.12"
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    env_file:
+      - Meet_me/docker.env
+    volumes:
+      - .:/srv/app
+    ports:
+      - "0.0.0.0:8000:8000"
+    command: python manage.py runserver 0.0.0.0:8000
+volumes:
+  static-data:
+
+
