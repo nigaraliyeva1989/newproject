@@ -1,11 +1,12 @@
 {% extends 'layout.html' %}
+{% load static %}
 
 {% block content %}
     
 
     <div class="row">
         <div class="col-md-12">
-            <h1>Meet_me</h1>
+            <h1 class="myHeader">Meet_me</h1>
 
         </div>
 
@@ -13,7 +14,7 @@
     <p>
         <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad amet delectus, dignissimos doloribus enim fuga harum incidunt, numquam obcaecati quas ratione repellat reprehenderit sunt suscipit tempore! Delectus et numquam veritatis.</span><span>Commodi dolor nam saepe! Adipisci aliquam asperiores excepturi expedita molestias neque quaerat reprehenderit vitae. Ab culpa ducimus esse est expedita illum iste minus odio porro voluptatem! Aliquam libero nesciunt omnis?</span><span>Adipisci asperiores, cumque debitis est et, facere ipsum maxime minima neque officia possimus sed similique? Aspernatur atque distinctio eum eveniet fugiat libero neque odio. Aliquam error iure nulla quae voluptates!</span><span>Accusamus animi aperiam asperiores atque consequatur cum dolor est, exercitationem expedita illo ipsam labore nisi praesentium quae quis reiciendis repellat reprehenderit sit sunt totam ullam velit, veniam voluptate. Perspiciatis, quia!</span><span>Perspiciatis sunt, vel. Accusantium at atque officia perferendis voluptate. Amet, animi, aperiam dolorem facilis fugiat minus obcaecati odio officiis porro quaerat sapiente tempora velit veniam? Amet animi nisi reprehenderit vel.</span><span>Cum dolor explicabo, illum incidunt labore officiis quos sequi voluptatum. Consequuntur deserunt error magnam perspiciatis reiciendis saepe? Alias corporis dolorem, eaque esse maiores maxime neque nisi qui saepe vitae voluptatum!</span><span>Adipisci excepturi inventore ipsa nisi repudiandae! At consequatur dolor dolore est laborum molestias odio praesentium provident veritatis voluptas? Beatae dolore iusto quaerat vel. Alias architecto eos maxime saepe sit voluptas.</span><span>Atque consectetur doloribus error iste natus neque nesciunt, nisi quos sequi veniam. A ab eaque facilis nulla provident quaerat quia quidem ullam velit vero. Asperiores consectetur corporis esse quo voluptas.</span><span>Alias asperiores autem consequuntur eaque error, expedita fuga id in inventore ipsum iusto labore minus natus nostrum nulla odit officiis possimus provident quaerat, quas quo, ratione soluta suscipit tenetur voluptates?</span><span>Accusamus beatae cumque enim ex expedita, facilis id magni minima molestiae necessitatibus nemo non praesentium quae quidem ratione reiciendis repellat repudiandae sint suscipit tempore ullam ut veniam veritatis vitae voluptatem!</span>
     <div class="card" style="width: 18rem;">
-        <img src="https://placehold.co/450x300" class="card-img-top" alt="...">
+        <img src="{% get_media_prefix %}card.png" class="card-img-top" alt="...">
         <div class="card-body">
             <h5 class="card-title">Card title</h5>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
