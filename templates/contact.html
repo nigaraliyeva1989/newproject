@@ -1,33 +1,23 @@
+{% extends 'layout.html' %}
 {% load static %}
 
-<!doctype html>
-<html lang="en">
-    {% include 'includes/head.html' %}
-    <body>
-        {% include 'includes/navbar.html' %}
-        <!--================Header Menu Area =================-->
-       
-        <!--================Header Menu Area =================-->
-        
-        <!--================Home Banner Area =================-->
-        <section class="banner_area">
-            <div class="box_1620">
-				<div class="banner_inner d-flex align-items-center">
-					<div class="container">
-						<div class="banner_content text-center">
-							<h2>Contact Us</h2>
-							<div class="page_link">
-								<a href="index.html">Home</a>
-								<a href="contact.html">Contact Us</a>
-							</div>
-						</div>
-					</div>
+{% block home_banner_area %}
+     <section class="home_banner_area">
+           	<div class="container box_1620">
+           		<div class="banner_inner d-flex align-items-center">
+					<div class="banner_content text-center">
+    <h2>Contact Us</h2>
+    <div class="page_link">
+        <a href="index.html">Home</a>
+        <a href="contact.html">Contact Us</a>
+    </div>
+         </div>
 				</div>
             </div>
         </section>
-        <!--================End Home Banner Area =================-->
-        
-        <!--================Contact Area =================-->
+{% endblock %}
+        {% block content %}
+            <!--================Contact Area =================-->
         <section class="contact_area p_120">
             <div class="container">
                 <div id="mapBox" class="mapBox" 
@@ -120,6 +110,10 @@
         </div>
         <!--================End Contact Success and Error message Area =================-->
         
+    {% endblock %}
+        
+        
+        
         {% include 'includes/footer.html' %}
         
         
@@ -127,12 +121,13 @@
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
         
         <!-- contact js -->
-        <script src="{% static 'js/jquery.form.js' %}"></script>
+       
+
+{% block extra_scripts %}
+     <script src="{% static 'js/jquery.form.js' %}"></script>
         <script src="{% static 'js/jquery.validate.min.js' %}"></script>
         <script src="{% static 'js/contact.js' %}"></script>
         <!--gmaps Js-->
         <script src="{% static 'https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE' %}"></script>
         <script src="{% static 'js/gmaps.min.js' %}"></script>
-        
-    </body>
-</html>
+            {% endblock %}
