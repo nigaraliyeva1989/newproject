@@ -1,5 +1,6 @@
 from django.shortcuts import render
-from core.models import GeneralSetting
+from core.models import GeneralSetting,ImageSetting
+
 
 
 # Create your views here.
